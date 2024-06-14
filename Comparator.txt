@@ -1,0 +1,106 @@
+package nmam;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+class Product  {
+	int price;
+	int qty;
+	String name;
+	public Product() {
+		// TODO Auto-generated constructor stub
+	}
+	public Product(int price, int qty, String name) {
+		super();
+		this.price = price;
+		this.qty = qty;
+		this.name = name;
+	}
+	
+	public String toString() {
+		return price+" "+qty+" "+name;
+	}
+
+	
+	
+}
+ 
+
+public class Test1   { 
+	
+	 public static void main(String []args) {
+Product p1 = new Product(1000, 20, "mobile");
+Product p2 = new Product(674, 2, "watch");
+Product p3 = new Product(234, 21, "keyboard");
+
+ArrayList<Product> a = new ArrayList<>();
+a.add(p1);
+a.add(p2);
+a.add(p3);
+// Product p= a.get(1);
+//System.out.println(a.get(1));
+//System.out.println(p.name);
+//System.out.println(a);
+Comparator<Product> c1 = new Comparator<Product>() {
+//sort based on the price	 
+		public int compare(Product o1, Product o2) {
+			 System.out.println("hi............");
+			return o1.price>o2.price?1:-2;
+		}
+};
+
+Comparator<Product> c2 = new Comparator<Product>() {
+//based on the qty it will sort	 
+	public int compare(Product o1, Product o2) {
+		 System.out.println("qty.................");
+		return o1.qty>o2.qty?1:-2;
+	}
+};
+a.sort(c1);
+System.out.println(a);
+a.sort(c2);
+System.out.println(a);
+
+
+	 }
+	 }
+ =============================
+public class Test1   { 
+	
+	 public static void main(String []args) {
+Product p1 = new Product(1000, 20, "mobile");
+Product p2 = new Product(674, 2, "watch");
+Product p3 = new Product(234, 21, "keyboard");
+
+ArrayList<Product> a = new ArrayList<>();
+a.add(p1);
+a.add(p2);
+a.add(p3);
+Comparator<Product> alreadyWritten = new Product();
+a.sort(alreadyWritten);
+System.out.println(a);
+
+Comparator<Product> c1 = new Comparator<Product>() {
+//sort based on the price	 
+		public int compare(Product o1, Product o2) {
+			 System.out.println("hi............");
+			return o1.price>o2.price?1:-2;
+		}
+};
+
+Comparator<Product> c2 = new Comparator<Product>() {
+//based on the qty it will sort	 
+	public int compare(Product o1, Product o2) {
+		 System.out.println("qty.................");
+		return o1.qty>o2.qty?1:-2;
+	}
+};
+a.sort(c1);
+System.out.println(a);
+a.sort(c2);
+System.out.println(a);
+
+
+	 }
+	 }

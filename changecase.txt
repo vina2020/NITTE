@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main
+{
+    char changeCase(char x)
+    {  
+        if(x>='A' && x<='Z')
+        {
+            int a=x;// 65
+            int ans=a+32;
+            return (char)ans;
+        }
+        else if(x>='a' && x<='z')
+        {
+            int a=x; 
+            int ans=a-32;
+            return (char)ans;
+        }
+        return 0 ;
+    }
+	public static void main(String[] args) {
+	    char a;
+	    Main m = new Main();
+	    Scanner s = new Scanner(System.in);
+	    a=s.next().charAt(0);
+	    char ans=m.changeCase(a);
+	System.out.println(ans);
+		
+	}
+}

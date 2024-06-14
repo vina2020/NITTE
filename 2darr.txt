@@ -1,0 +1,146 @@
+package oops;
+
+public class TD {
+
+	public static void main(String[] args) {
+		 int a[][]= { {1,2,3},{4,5,6},{7,8,9}};
+		 int b[][]= new int[][]{{1,2,3},{4,5,6},{7,8,9}};
+		 int c[][]=new int[3][3];
+		 int d[][]=new int[3][];
+		 
+		 for(int i=0;i<a.length;i++)
+		 {
+			 for(int j=0;j<a.length;j++)
+			 {
+				 System.out.print(a[i][j]);
+			 }
+			 System.out.println();
+		 }
+	}
+
+}
+==============================================
+package oops;
+
+import java.util.Scanner;
+
+public class TD {
+
+	public static void main(String[] args) {
+		 
+		 int c[][]=new int[3][3];
+		 int d[][]=new int[3][];
+		 Scanner s = new Scanner(System.in);
+		 System.out.println("Enter the nos: ");
+		 for(int i=0;i<c.length;i++)
+		 {
+			 for(int j=0;j<c.length;j++)
+			 {
+				  c[i][j] =s.nextInt();
+			 }	 
+		 }
+		 System.out.println("the datas are: ");
+		 for(int i=0;i<c.length;i++)
+		 {
+			 for(int j=0;j<c.length;j++)
+			 {
+				 System.out.print(c[i][j]);
+			 }
+			 System.out.println();
+		 }
+	}
+
+}
+===================================
+package oops;
+
+import java.util.Scanner;
+
+public class TD {
+
+	public static void main(String[] args) {
+		 
+		 int c[][]=new int[][] {{1,2,3},{1,1},{8,1,2,1,2,3,5}};
+		 
+		  
+		 System.out.println("the len is  : "+c.length);
+		 for(int i=0;i<c.length;i++)
+		 {
+			 for(int j=0;j<c.length;j++)
+			 {
+				 System.out.print(c[i][j]);
+			 }
+			 System.out.println();
+		 }
+		
+	}
+
+}
+===============================================
+package oops;
+
+import java.util.Scanner;
+
+public class TD {
+
+	public static void main(String[] args) {
+		 
+		 int c[][]=new int[][] {{1,2,3},{1,1},{8,1,2,1,2,3,5}};
+		 
+		  
+		 System.out.println("the len is  : "+c.length);
+		 for(int i=0;i<c.length;i++)
+		 {
+			 for(int j=0;j<c[i].length;j++)
+			 {
+				 System.out.print(c[i][j]);
+			 }
+			 System.out.println();
+		 }
+		
+	}
+
+}
+=========================================================
+package oops;
+
+import java.util.Scanner;
+
+public class TD {
+
+	public static void main(String[] args) {
+		 
+		 int limit;
+		 
+		 Scanner s= new Scanner(System.in);
+		 System.out.println("Enter the limit: ");
+		 limit=s.nextInt();
+		 int d[][]= new int [limit][];
+		  
+		 
+		 for(int i=0;i<d.length;i++)
+		 {
+			 System.out.println("how many nos u need in "+i+" row");
+			 int data=s.nextInt();
+			 d[i]=new int[data];
+			 System.out.println("enter the datas : ");
+			 for(int j=0;j<d[i].length;j++)
+			 {
+				   d[i][j]=s.nextInt();
+			 }
+			 System.out.println();
+		 }
+		 System.out.println("the datas are : ");
+		 for(int i=0;i<d.length;i++)
+		 {
+			 
+		 
+			 for(int j=0;j<d[i].length;j++)
+			 {
+				  System.out.print(d[i][j]);
+			 }
+			 System.out.println();
+		 }
+	}
+
+}

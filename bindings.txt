@@ -1,0 +1,65 @@
+package oops;
+class Test1{
+	 
+	public void disp( ) {
+		 System.out.println("im from Test1 disp");
+	}
+	public void disp1( ) {
+		 System.out.println("im from Test1 disp1");
+	}
+}
+class A extends Test1{
+
+	 
+	public void disp( ) {
+		 System.out.println("im from A disp");
+	}
+	public void show( ) {
+		 System.out.println("im from A show");
+	}
+	public void show1( ) {
+		 System.out.println("im from A show1");
+	}
+	
+}
+ 
+
+public class Bind {
+	public static void main(String[] args) {
+		 Test1 t = new A();
+		 t.disp();
+
+	}
+
+}
+==========================================
+package oops;
+class Test1{
+	public void disp( ) {
+		 System.out.println("im from Test1 disp");
+	}
+	 }
+class A extends Test1{
+public void disp( ) {
+		 System.out.println("im from A disp");
+	}	
+}
+class B extends Test1{ 
+	public void disp( ) {
+		 System.out.println("im from B disp");
+	} 
+} 
+
+public class Bind {
+	public static void main(String[] args) {
+		 Test1 t = new Test1();
+		 t.disp();
+		 t=new A();
+		 t.disp();
+		 t= new B();
+		 t.disp();
+		 
+
+	}
+
+}

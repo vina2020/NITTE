@@ -1,0 +1,35 @@
+class Nandhini{
+    int a;
+    void display()//NANR
+    {
+        System.out.println("welcome");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    Nandhini n = new Nandhini();
+		System.out.println("Hello World");
+		n.display();
+	}
+}
+================================
+class Nandhini{
+    int a;
+    void display(String name)//WANR
+    {
+        String s="welcome";
+        s=s+name;
+      // System.out.println(s);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    Nandhini n = new Nandhini();
+		System.out.println("Hello World");
+		n.display("sai");
+		
+	}
+}
+

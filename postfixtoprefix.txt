@@ -1,0 +1,58 @@
+package stack;
+
+import java.util.Stack;
+
+public class PostfixtoPrefix {
+	static boolean isOperator(char x)
+	{
+
+		switch (x) { 
+		case '+':
+		case '-':
+		case '/':
+		case '*':
+			return true;
+		}
+		return false;
+	}
+
+	
+	static String Eval(String exp)
+	{
+		Stack<String> s = new Stack<String>();
+        int length = exp.length();
+        for (int i = 0; i < length; i++) 
+		{
+           if (isOperator(exp.charAt(i))) 
+			{
+                String op1 = s.peek();
+              
+				s.pop();
+				String op2 = s.peek();
+				s.pop();
+
+			String temp= exp.charAt(i) + op2 + op1;
+            s.push(temp);
+         
+			}
+	        else {
+             s.push(exp.charAt(i) + "");
+             
+			}
+		}
+
+//		String ans = "";
+//		for (String i : s)
+//			ans += i;
+		return s.pop();
+	}
+
+	public static void main(String[] args) {
+		String exp = "XYZ/-BM/K-*";
+		  
+
+		System.out.println("Prefix : "+ Eval(exp));
+
+	}
+
+}

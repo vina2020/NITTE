@@ -1,0 +1,21 @@
+package nmam;
+
+class Par{
+	public static void main(String[] args) {
+		 System.out.println("im from the par");
+
+	}
+	void disp()
+	{
+		System.out.println("im from disp");
+	}
+}
+public class Test1 extends Par {
+
+	public static void main(String[] args) {
+		Test1  t1= new Test1();
+		 System.out.println("im from the test1");
+
+	}
+
+}

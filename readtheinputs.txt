@@ -1,0 +1,25 @@
+public class Main
+{
+	public static void main(Stri… Read more
+3:46 PM
+import java.util.Scanner;
+public class Main{
+public static void main(String[] args) {
+ Scanner s = new Scanner(System.in);
+ int roll;
+ String c;
+ long l;
+ System.out.println("enter the roll");
+ roll=s.nextInt();
+ s.nextLine();
+  System.out.println("enter the name");
+ c=s.nextLine();
+  System.out.println("enter the mbl");
+  l=s.nextLong();
+ System.out.println(roll+" "+c+l);
+ 
+ 
+ 
+    
+}
+}

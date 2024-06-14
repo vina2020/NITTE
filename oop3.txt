@@ -1,0 +1,90 @@
+package oops;
+
+import java.util.Scanner;
+class Parent
+{
+  void eat()
+  {
+	  System.out.println("i use right hand to eat");
+  }
+}
+class Child extends Parent{
+	 void eat()
+	  {
+		
+		  System.out.println("i use left hand to eat");
+		  super.eat();
+	  }
+}
+public class First  {
+	public static void main(String[] args) {
+	 Child c= new Child();
+	 c.eat();
+	 
+	 
+  
+	}
+	 
+
+}
+ 
+package oops;
+
+import java.util.Scanner;
+class Parent{
+	
+	Parent(){
+		System.out.println("im the parent");
+	}
+}
+class Students extends Parent{
+ 
+	
+	
+}
+public class First {
+
+	public static void main(String[] args) {
+	 Students s = new Students();
+	// System.out.println(s.a);
+  
+    
+  
+  
+	}
+	 
+
+}
+
+
+===============================================
+package oops;
+
+import java.util.Scanner;
+class Parent{
+	
+	Parent(){
+		System.out.println("im the parent");
+	}
+}
+class Students extends Parent{
+ 
+	public Students() {
+		 System.out.println("im the child");
+	}
+	
+}
+public class First {
+
+	public static void main(String[] args) {
+	 Students s = new Students();
+	// System.out.println(s.a);
+  
+    
+  
+  
+	}
+	 
+
+}
+

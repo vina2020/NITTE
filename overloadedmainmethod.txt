@@ -1,0 +1,14 @@
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		main(120);
+	}
+	public static void main() {
+		System.out.println("Hello World no args");
+	}
+	public static void main(int args) {
+		System.out.println("Hello World int: "+args);
+		main();
+	}
+}

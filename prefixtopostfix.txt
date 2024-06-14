@@ -1,0 +1,52 @@
+package stack;
+
+import java.util.Stack;
+
+public class prefixtopostfix {
+	static boolean isOperator(char ch)
+	  {
+	    if(ch == '+' || ch == '-' || ch == '*' || ch == '/')
+	    return true;
+
+	    return false;
+	  }
+
+	 
+	  static String convertPrefixToPostfix(String prefix)
+	  {
+		  Stack<String> postFix = new Stack<>();
+		  
+	      int n = prefix.length();
+
+	    for (int i = n - 1; i >= 0; i--)
+	    {
+	      char ch= prefix.charAt(i);
+
+	      if (isOperator(ch)) 
+	      {
+	   
+	      String first = postFix.pop();
+
+	      String second = postFix.pop();
+
+	      String temp_postFix = first + second + ch;
+	      postFix.push(temp_postFix);
+	      }
+
+	    else 
+	      { 
+	     
+	      postFix.push(ch + "");
+	      }
+	    }
+
+	    return postFix.pop();
+	  }
+	public static void main(String[] args) {
+		 String prefix = "/+AB-CD";   
+		    System.out.println("The Prefix Expression is: "+prefix);
+		    String result = convertPrefixToPostfix(prefix);
+		    System.out.println("The Equivalent Postfix is : "+ result);  
+	}
+
+}

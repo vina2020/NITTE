@@ -1,0 +1,37 @@
+package oops;
+
+class Students{
+	private int roll;
+	private String name;
+	private String clgname;
+	{
+		
+		
+	}
+	Students()
+	{
+		
+	}
+	void disp()
+	{
+		System.out.println("hai");
+	}
+}
+public class First {
+
+	public static void main(String[] args) {
+  Students s1=   new Students();
+   Students s2= new Students();
+   s1.roll=1;
+   s1.name="nan";
+   s1.clgname="nit";
+   s2.roll=2;
+   s2.name="kala";
+   s2.clgname="nitee";
+   System.out.println(s1.roll+" "+s1.name+" "+s1.clgname);
+   System.out.println(s2.roll+" "+s2.name+" "+s2.clgname);
+
+	}
+	 
+
+}

@@ -1,0 +1,46 @@
+import java.util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    int b[]=new int[3];
+	      
+	    b[0]=6;
+	    b[1]=55;
+	    b[2]=88;
+	   
+			System.out.println(Arrays.toString(b));
+			 
+	}
+}
+
+=================================================
+ import java.util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    int b[]=new int[3];
+	      
+	   … Read more
+10:27 AM
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    int limit;
+	    Scanner s = new Scanner(System.in);
+	System.out.println("Enter the limit");
+	limit=s.nextInt();
+	    int a[]=new int[limit];
+	   System.out.println("Enter the nos");  
+	   for(int i=0;i<a.length;i++)
+	   a[i]=s.nextInt();
+	  System.out.println("the nos are:");    
+	     for(int i=0;i<a.length;i++)
+	    System.out.println(a[i]);
+	   
+		 
+			 
+	}
+}

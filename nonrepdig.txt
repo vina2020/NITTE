@@ -1,0 +1,22 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int n1=100,n2=104,c=0;
+	    for(int i=n1;i<=n2;i++)
+	    {
+	        boolean v[]=new boolean[10];
+	        int n=i;
+	        while(n>0)
+	        {
+	            if(v[n%10]==true)
+	            break;
+	            else
+	            v[n%10]=true;
+	            n=n/10;
+	        }
+	        if(n==0)
+	        c++;
+	    }
+		System.out.println("tot non rep dig: "+c);
+	}
+}

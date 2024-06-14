@@ -1,0 +1,22 @@
+class Parent {
+    
+final void disp()
+{
+    System.out.println("im from par");
+}
+}
+class Child extends Parent  {
+    
+void disp()
+{
+    System.out.println("im from child");
+}
+}
+public class Main
+{
+synchronized strictfp	public static void main(String[] args) {
+ Child c = new Child();
+ c.disp();
+		System.out.println("Hello World");
+	}
+}

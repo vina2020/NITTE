@@ -1,0 +1,140 @@
+package nmam;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Test1   {
+	 
+	public static void main(String[] args) {
+		byte a=34;
+		short b=12;
+		int c=11;
+		long d=110;
+		char e='s';
+		float f=45.7F;
+		double g=34.8;
+		boolean h=true;
+		boolean i=false;
+		String ans=Byte.toString(a);
+		System.out.println(ans.charAt(0));
+		String ans1=String.valueOf(a);
+		System.out.println(ans1.charAt(1));
+		
+		String ans2=Short.toString(b);
+		System.out.println(ans2.charAt(0));
+		String ans3=String.valueOf(b);
+		System.out.println(ans3.charAt(1));
+		
+		
+
+		String ans4=Integer.toString(c);
+		System.out.println(ans4.charAt(0));
+		String ans5=String.valueOf(c);
+		System.out.println(ans5.charAt(1));
+		
+		
+		
+
+		String ans6=Long.toString(c);
+		System.out.println(ans6.charAt(0));
+		String ans7=String.valueOf(c);
+		System.out.println(ans7.charAt(1));
+		
+		
+		
+
+		String ans8=Long.toString(d);
+		System.out.println(ans8.charAt(0));
+		String ans9=String.valueOf(d);
+		System.out.println(ans9.charAt(1));
+		
+		
+		
+		
+
+		String ans10=Character.toString(e);
+		System.out.println(ans10.charAt(0));
+		
+		
+
+		String ans11=Float.toString(f);
+		System.out.println(ans11.charAt(0));
+		String ans12=String.valueOf(f);
+		System.out.println(ans12.charAt(2));
+		
+		String ans13=Double.toString(g);
+		System.out.println(ans13.charAt(0));
+		String ans14=String.valueOf(g);
+		System.out.println(ans14.charAt(2));
+		
+		
+		String ans15=Boolean.toString(h);
+		System.out.println(ans15.charAt(0));
+		String ans16=String.valueOf(h);
+		System.out.println(ans16.charAt(2));
+		
+		
+		
+		String ans17=Boolean.toString(i);
+		System.out.println(ans17.charAt(1));
+		String ans18=String.valueOf(i);
+		System.out.println(ans18.charAt(3));
+		 
+		 
+		 
+		
+	}
+
+}
+package nmam;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Test1   {
+	 
+	public static void main(String[] args) {
+	char c[]= {'a','b','c'};
+	String ans=String.valueOf(c);//char[] into string
+	System.out.println(ans);
+	char d='a';
+	String ans1=Character.toString(d);// convert single char into string
+	System.out.println(ans1);
+	}
+	 
+		
+	 
+
+}
+package nmam;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Test1   {
+	 
+	public static void main(String[] args) {
+	 String a="11";
+	 String b="12";
+	 String d1="false";
+	 System.out.println(a+b);
+	 int c=Integer.parseInt(a);
+	 int d=Integer.parseInt(b);
+	 System.out.println(c+d);
+	 float x= Float.parseFloat(a);
+	 float y= Float.parseFloat(b);
+	 System.out.println(x+y);
+	 boolean x1=Boolean.parseBoolean(d1);
+	 System.out.println("the x1: "+ x1);
+//	 if(x1)
+//		 System.out.println("true");
+//	 else
+//		 System.out.println("bye");
+//	 
+	}
+	 
+		
+	 
+
+}
+ 

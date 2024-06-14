@@ -1,0 +1,70 @@
+package oops;
+
+import java.util.Scanner;
+class Dad
+{
+  void says1()
+  {
+	  System.out.println("dnt go out");
+  }
+}
+class Mom
+{
+	void says()
+	  {
+		  System.out.println(" go out");
+	  }
+}
+class Child extends Dad,Mom{
+	 
+}
+ 
+public class First  {
+	public static void main(String[] args) {
+	 
+  
+	}
+	 
+
+}
+
+
+=======================
+package oops;
+
+import java.util.Scanner;
+interface Dad
+{
+  void says();
+  
+}
+interface Mom
+{
+	void disp();
+}
+class Child implements Dad, Mom{
+
+	@Override
+	public void says() {
+	 System.out.println("go out");
+		
+	}
+
+	@Override
+	public void disp() {
+		System.out.println("hai");
+		
+	}
+	 
+}
+ 
+public class First  {
+	public static void main(String[] args) {
+	 Child c = new Child();
+	 c.says();
+	 c.disp();
+  
+	}
+	 
+
+}

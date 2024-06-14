@@ -1,0 +1,36 @@
+package oops;
+
+import java.util.Scanner;
+ 
+class Parent {
+	int height,weight;
+	Parent(int height,int weight){		
+		this.height=height;
+		this.weight=weight;	 
+	}
+	 public String toString()
+	 {
+		 return height+" "+weight;
+	 }
+}
+class Students extends Parent {
+	String color;
+	public Students(int height,int weight,String color) {
+	 super(height,weight);
+	 this.color=color;
+	}
+	
+	public String toString()
+	 {
+		 return height+" "+weight+" "+color;
+	 }
+}
+public class First {
+	public static void main(String[] args) {
+	 Students s = new Students(12,100,"black");
+	  System.out.println(s);
+  
+	}
+	 
+
+}

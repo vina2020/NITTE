@@ -1,0 +1,98 @@
+package oops;
+
+
+abstract class Product {
+ private String name;
+ private double price;
+
+ public Product(String name, double price) {
+     this.name = name;
+     this.price = price;
+ }
+
+  
+ public String getName() {
+     return name;
+ }
+
+ public double getPrice() {
+     return price;
+ }
+
+  
+ public abstract void displayDetails();
+}
+ class Electronics extends Product {
+ private String brand;
+ private int warrantyPeriod;
+
+ public Electronics(String name, double price, String brand, int warrantyPeriod) {
+     super(name, price);
+     this.brand = brand;
+     this.warrantyPeriod = warrantyPeriod;
+ }
+
+ @Override
+ public void displayDetails() {
+     System.out.println("Electronics: " + getName() + ", Price: $" + getPrice() + ", Brand: " + brand + ", Warranty: " + warrantyPeriod + " months");
+ }
+}
+
+class Clothing extends Product {
+ private String size;
+ private String material;
+
+ public Clothing(String name, double price, String size, String material) {
+     super(name, price);
+     this.size = size;
+     this.material = material;
+ }
+
+ @Override
+ public void displayDetails() {
+     System.out.println("Clothing: " + getName() + ", Price: $" + getPrice() + ", Size: " + size + ", Material: " + material);
+ }
+}
+
+ 
+class ShoppingCart {
+ private Product product1;
+ private Product product2;
+
+ public void addProduct1(Product product) {
+     this.product1 = product;
+ }
+
+ public void addProduct2(Product product) {
+     this.product2 = product;
+ }
+
+ public void displayCart() {
+     if (product1 != null) product1.displayDetails();
+     if (product2 != null) product2.displayDetails();
+ }
+
+ public double getTotalPrice() {
+     double total = 0;
+     if (product1 != null) total += product1.getPrice();
+     if (product2 != null) total += product2.getPrice();
+     return total;
+ }
+}
+
+public class ECommerceDemo {
+ public static void main(String[] args) {
+     // Creating products
+     Product laptop = new Electronics("Laptop", 1200.00, "Dell", 24);
+     Product tshirt = new Clothing("T-shirt", 20.00, "L", "Cotton");
+
+     // Using polymorphism
+     ShoppingCart cart = new ShoppingCart();
+     cart.addProduct1(laptop);
+     cart.addProduct2(tshirt);
+
+     // Display cart details
+     cart.displayCart();
+     System.out.println("Total Price: $" + cart.getTotalPrice());
+ }
+}

@@ -1,0 +1,486 @@
+package nmam;
+
+import java.io.StringBufferInputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Test1   {
+	 
+	public static void main(String[] args) {
+ 
+		List  a= new ArrayList<>(15);
+		System.out.println(a.size());
+		a.add(12);
+		a.add(3);
+		a.add(5);
+		a.add(45.6F);
+		a.add('A');
+		a.add("hello");
+		a.add(0,"newEle");  
+		 System.out.println(a);
+		 System.out.println(a.size());
+		 
+		 a.remove(2);
+		 // a.remove('A'); err
+		 a.remove("hello");
+		 a.remove(45.6F);
+   a.set(0, "BIT");
+		 System.out.println(a);
+		 System.out.println(a.size());
+	 
+	}
+	 
+		
+	 
+
+}
+==============================
+package nmam;
+
+import java.io.StringBufferInputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Test1   { 
+	 
+	public static void main(String[] args) {
+ 
+		List<Integer>  a= new ArrayList<>();
+		System.out.println(a.size());
+		a.add(12);
+		a.add(3);
+		a.add(5); 
+		 System.out.println(a);
+		 System.out.println("the size: "+ a.size());
+		 
+		 Iterator<Integer> itr= a.iterator();
+		 
+		 while(itr.hasNext())
+			 System.out.println(itr.next());
+		 
+		 
+	 for(Integer i:a)
+		 System.out.println(i);
+	}
+	 
+		
+	 
+
+}
+package nmam;
+
+import java.io.StringBufferInputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Test1   { 
+	 
+	public static void main(String[] args) {
+ 
+		List<Integer>  a= new ArrayList<>(); 
+		System.out.println(a.size());
+		a.add(12);
+		a.add(3);
+		a.add(5); 
+//		 System.out.println(a);
+//		 System.out.println("the size: "+ a.size());
+		 
+		ListIterator<Integer> itr= a.listIterator();
+		while(itr.hasNext())
+			 System.out.println(itr.next());
+		System.out.println("====================================");
+		 while(itr.hasPrevious())
+			 System.out.println(itr.previous());
+		 
+	 
+	}
+	 
+		
+	 
+
+}
+package nmam;
+
+import java.io.StringBufferInputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Test1   { 
+	 
+	public static void main(String[] args) {
+ 
+		List<Integer>  a= new ArrayList<>(); 
+		System.out.println(a.size());
+		a.add(1);
+		a.add(3);
+		a.add(5); 
+		
+		List<Integer>  b= new ArrayList<>(); 
+	 
+		b.add(100);
+		b.add(300);
+		b.add(555);
+		
+	//	a.addAll(b);
+		a.addAll(1,b);
+		System.out.println(a);
+ 
+	 
+	}
+	 
+		
+	 
+
+}
+package nmam;
+
+import java.io.StringBufferInputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Test1   { 
+	 
+	public static void main(String[] args) {
+ 
+		ArrayList<Integer>  a= new ArrayList<>(); 
+	
+		a.add(1);
+		a.add(3);
+		a.add(5); 
+		
+		List<Integer>  b= new ArrayList<>(); 
+	 
+		b.add(1);
+		b.add(300);
+		b.add(555);
+		System.out.println(b);
+		System.out.println(a);
+		
+	  b.clear();
+	  System.out.println("b data cleared............");
+		System.out.println(b);
+ 
+	 
+	}
+	 
+		
+	 
+
+}
+package nmam;
+
+import java.io.StringBufferInputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Test1   { 
+	 
+	public static void main(String[] args) {
+ 
+		ArrayList<Integer>  a= new ArrayList<>(); 
+	
+		a.add(1);
+		a.add(3);
+		a.add(5); 
+		
+		List<Integer>  b= new ArrayList<>(); 
+	 
+		b.add(1);
+		b.add(300);
+		b.add(555);
+		System.out.println(b);
+		System.out.println(a);
+		
+	 
+	  System.out.println("checking contains or not ");
+		System.out.println( b.contains(1));
+		System.out.println( b.contains(100));
+	 
+	}
+	 
+		
+	 
+
+}
+package nmam;
+
+import java.io.StringBufferInputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Test1   { 
+	 
+	public static void main(String[] args) {
+ 
+		ArrayList<Integer>  a= new ArrayList<>(); 
+	
+		a.add(5);
+		a.add(3);
+		a.add(1); 
+		
+		List<Integer>  b= new ArrayList<>(); 
+	 
+		b.add(5);
+		b.add(3);
+		b.add(1);
+		System.out.println(b);
+		System.out.println(a);
+		
+
+	  System.out.println("checking contains all data from one arrylist to another or not ");
+		System.out.println(a.containsAll(b));
+		 
+	 
+	}
+	 
+		
+	 
+
+}
+package nmam;
+
+import java.io.StringBufferInputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Test1   { 
+	 
+	public static void main(String[] args) {
+ 
+		ArrayList<Integer>  a= new ArrayList<>(); 
+	
+		a.add(48);
+		a.add(3);
+		a.add(1); 
+		a.add(5);
+		
+		List<Integer>  b= new ArrayList<>(); 
+	 
+		b.add(5);
+		b.add(3);
+		b.add(1);
+		System.out.println(b);
+		System.out.println(a);
+		
+
+	  System.out.println("checking contains all data from one arrylist to another or not ");
+		System.out.println(a.containsAll(b));
+		 
+	 
+	}
+	 
+		
+	 
+
+}
+package nmam;
+
+import java.io.StringBufferInputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Test1   { 
+	 
+	public static void main(String[] args) {
+ 
+		ArrayList<Integer>  a= new ArrayList<>(); 
+	
+		//a.add(48);
+		a.add(3);
+		a.add(1); 
+		a.add(5);
+		 
+		List<Integer>  b= new ArrayList<>(); 
+	 
+		b.add(3);
+		b.add(1);
+		b.add(5);
+		System.out.println(b);
+		System.out.println(a);
+		
+
+	  System.out.println("checking equals() check datas r in the same order and length");
+		System.out.println(a.equals(b));
+		 
+	 
+	}
+	 
+		
+	 
+
+}
+package nmam;
+
+import java.io.StringBufferInputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Test1   { 
+	 
+	public static void main(String[] args) {
+ 
+		ArrayList<Integer>  a= new ArrayList<>(); 
+	
+		//a.add(48);
+		a.add(3);
+		a.add(1); 
+		a.add(5);
+		 
+		List<Integer>  b= new ArrayList<>(); 
+	 
+		b.add(3);
+		b.add(1);
+		b.add(5);
+		System.out.println(b);
+		System.out.println(a);
+		
+ 
+	  System.out.println("fetch particular data: ");
+		System.out.println(a.get(0));
+		 
+	 
+	}
+	 
+		
+	 
+
+}
+package nmam;
+
+import java.io.StringBufferInputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Test1   { 
+	 
+	public static void main(String[] args) {
+ 
+		ArrayList<Integer>  a= new ArrayList<>(); 
+	
+		//a.add(48);
+		a.add(3);
+		a.add(1); 
+		a.add(5);
+		 
+		List<Integer>  b= new ArrayList<>(); 
+	 
+		b.add(3);
+		b.add(1);
+		b.add(5);
+		System.out.println(b);
+		System.out.println(a);
+	 
+        
+	  System.out.println("print the index of given element: ");
+		System.out.println( a.indexOf(5) );
+		System.out.println( a.indexOf(50) );
+		 
+	 
+	}
+	 
+		
+	 
+
+}
+package nmam;
+
+import java.io.StringBufferInputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Test1   { 
+	 
+	public static void main(String[] args) {
+ 
+		ArrayList<Integer>  a= new ArrayList<>(); 
+	
+		//a.add(48);
+		a.add(3);
+		a.add(1); 
+		a.add(5);
+		 
+		List<Integer>  b= new ArrayList<>(); 
+	 
+		 
+	
+        
+	  System.out.println("check the list is empty or not: ");
+		System.out.println( a.isEmpty());
+		System.out.println( b.isEmpty() );
+		 
+	 
+	}
+	 
+		
+	 
+
+}

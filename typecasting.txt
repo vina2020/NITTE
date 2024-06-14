@@ -1,0 +1,85 @@
+public class Main
+{
+  
+	public static void main(String[] args) {
+	 
+	  short a1=(short)32768;
+	int a=3;
+	short b=(short)a;
+		System.out.println(a1);
+	}
+}
+
+===================================================
+ 
+public class Main
+{
+  
+	public static void main(String[] args) {
+	long  a= 2147483648L;
+	long b=56;
+	
+	long c=9223372036854775808L;
+	 
+	 
+		System.out.println(c);
+	}
+}
+
+===============================================
+ 
+public class Main
+{
+  
+	public static void main(String[] args) {
+ char a='C';
+ //byte b=(byte)a;
+ //int b=a;
+ short b=(short)a;
+	 
+	 
+		System.out.println(b);
+	}
+}
+
+=====================================
+ 
+public class Main
+{
+  
+	public static void main(String[] args) {
+//  int a=45;
+//  float b=a;
+	 float a=56.6F;
+	  int b=(int)a;
+	 
+	 
+		System.out.println(b);
+	}
+}
+
+========================================
+ 
+public class Main
+{
+  
+	public static void main(String[] args) {
+ byte salary=4;
+ byte bonus=5;
+ //salary=(byte)(salary+bonus);
+ salary+=bonus;
+	 
+		System.out.println(salary);
+	}
+}
+
+===================================================
+
+
+import java.util.Arrays;
+public class Nmam
+{
+	public static void main(String ...args) {
+		System.out.println(Arrays.toString(args));
+	}
+}

@@ -1,0 +1,248 @@
+package oops;
+
+class Students{
+	private int roll;
+	private String name;
+	private String clgname;
+	
+public int getRoll() {
+		return roll;
+	}
+	public void setRoll(int roll) {
+		this.roll = roll;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getClgname() {
+		return clgname;
+	}
+	public void setClgname(String clgname) {
+		this.clgname = clgname;
+	}
+ 
+	public void setData(int r,String n,String c) {
+		
+		 roll=r;
+		 name=n;
+		 clgname=c;
+				
+	}
+	public String disp()
+	{
+		return roll+" "+" "+name+" "+clgname;
+	}
+}
+public class First {
+
+	public static void main(String[] args) {
+  Students s1=   new Students();
+   Students s2= new Students();
+  s1.setData(1, "hari", "BIT");
+  s2.setData(2, "r… Read more
+10:25 AM
+package oops;
+
+class Students{
+	private int roll;
+	private String name;
+	static private String clgname;
+	
+public int getRoll() {
+		return roll;
+	}
+	public void setRoll(int roll) {
+		this.roll = roll;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getClgname() {
+		return clgname;
+	}
+	public void setClgname(String clgname) {
+		this.clgname = clgname;
+	}
+ 
+	public void setData(int r,String n,String c) {
+		
+		 roll=r;
+		 name=n;
+		 clgname=c;
+				
+	}
+	public String disp()
+	{
+		return roll+" "+" "+name+" "+clgname;
+	}
+}
+public class First {
+
+	public static void main(String[] args) {
+  Students s1=   new Students();
+   Students s2= new Students();
+   Students s3= new Students();
+   Students… Read more
+11:23 AM
+If the value of a variable is not varied from object to object such type of variable is called static variables.
+
+Static  variables should be declare with in the class directly using static modifier. But outside of any method or block or constructor.
+
+ In the case of static variable a single copy will be created at the class level and shared by every object of the class.
+
+
+Static variable will be created at the time of class loading & destroyed at the time of class unloading.
+
+static variable will be stored in the method area.
+
+We can access static variable either by object reference or by class name or directly by the variable name.
+
+
+
+
+We can access static variable directly from both instance & the static area.
+
+
+ For static variable JVM will always provide default value.
+11:23 AM
+Local variable will be declare inside of method or block or constructor.
+
+Such types of variables are called as local or temporary or stack or automatic.
+
+Local variables are stored in stack memory.
+
+Local variables will be created while execution the block, when the execution complete the variable is destroyed.
+11:24 AM
+package oops;
+
+class Students{
+	private int roll;
+	private String name;
+	static private String clgname;
+	
+public int getRoll() {
+		return roll;
+	}
+	public void setRoll(int roll) {
+		this.roll = roll;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getClgname() {
+		return clgname;
+	}
+	public void setClgname(String clgname) {
+		this.clgname = clgname;
+	}
+ 
+	public void setData(int r,String n,String c) {
+		
+		 roll=r;
+		 name=n;
+		 clgname=c;
+				
+	}
+	public String disp()
+	{
+		return roll+" "+" "+name+" "+clgname;
+	}
+}
+public class First {
+
+	public static void main(String[] args) {
+  Students s1=   new Students();
+   Students s2= new Students();
+   Students s3= new Students();
+   Students… Read more
+11:34 AM
+package oops;
+
+class Students{
+	private int roll;
+	private String name;
+	 private String clgname;
+	
+public int getRoll() {
+		return roll;
+	}
+	public void setRoll(int roll) {
+		this.roll = roll;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getClgname() {
+		return clgname;
+	}
+	public void setClgname(String clgname) {
+		this.clgname = clgname;
+	}
+   public Students(int r,String n,String c) {
+		 roll=r;
+		 name=n;
+		 clgname=c;
+				}
+//	public void setData(int r,String n,String c) {
+//		
+//		 roll=r;
+//		 name=n;
+//		 clgname=c;
+//				
+//	}
+	public String disp()
+	{
+		return roll+" "+" "+name+" "+clgname;
+	}
+}
+public class First {
+
+	public static void main(String[] args) {
+  Students s1=… Read more
+11:41 AM
+package oops;
+
+class Students{
+	private int roll;
+	private String name;
+	 private String clgname;
+	
+   public Students(int r,String n,String c) {
+		 roll=r;
+		 name=n;
+		 clgname=c;
+				}
+public String toString() {
+	return roll+" "+" "+name+" "+clgname;
+}
+//	public String disp()
+//	{
+//		return roll+" "+" "+name+" "+clgname;
+//	}
+}
+public class First {
+
+	public static void main(String[] args) {
+  Students s1=   new Students(1, "hari", "BIT");
+   Students s2= new Students(2, "ram", "NIT");
+  
+  System.out.println(s1);
+  System.out.println(s2);
+  
+  
+	}
+	 
+
+}

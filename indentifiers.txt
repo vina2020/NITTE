@@ -1,0 +1,22 @@
+class Test{
+    static int x=56;
+}
+public class Main
+{
+  
+	public static void main(String[] args) {
+	 int a=99;
+	 int a6=66;
+	 int a_8=76;
+	 int __=3;
+	 int $=2;
+	 int $_$=6;
+	 int $=332;
+	 int _7=90;
+	 int $2=55;
+	 int _=3322;
+	 int sdfsdhfsdhfsdkhfsdfsdhsgfdgfgdfheryeyeryeryeryeryeryeryeryrereyerer=6;
+	    
+		System.out.println("hai");
+	}
+}
